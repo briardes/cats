@@ -42,10 +42,16 @@ group :test do
   gem 'simplecov', require: false
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+  gem 'shoulda-matchers'
 end
+group :development do
+  gem 'guard-rspec', require: false
+
+  gem 'annotate'
+end
+gem 'dragonfly'
 gem 'simple_form'
 gem 'byebug'
-gem 'guard-rspec', require: false, group: :development
 gem "rspec-rails", '~> 3.0.1', group: [:development, :test]
 gem "foundation-rails"
 gem "font-awesome-sass"
